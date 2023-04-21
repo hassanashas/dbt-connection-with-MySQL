@@ -1,0 +1,36 @@
+CREATE DATABASE source_db;
+
+CREATE SCHEMA source_schema;
+
+create table source_schema.table_one 
+(
+	id int, 
+	name varchar(50)
+);
+
+insert into source_schema.table_one 
+values(1, 'Tanzeel'), (2, 'Khan');
+
+create table source_schema.table_two 
+(
+	id int, 
+	product varchar(50)
+);
+
+insert into source_schema.table_two 
+values(1, 'Tapal'), (2, 'Prixite'), (3, 'LLG');
+
+create table source_schema.table_three
+(
+	id int, 
+	item varchar(50)
+);
+
+insert into source_schema.table_three
+values(1, 'Random');
+
+CREATE DATABASE target_db; 
+
+CREATE SCHEMA target_schema;
+
+SELECT @@ServerName;

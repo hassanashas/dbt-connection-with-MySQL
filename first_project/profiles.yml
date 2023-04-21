@@ -1,0 +1,13 @@
+first_project:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      windows_login: True
+      # username: 
+      # password: 
+      server: DESKTOP-5GA6COT
+      database: target_db
+      schema: target_schema
+      driver: 'ODBC Driver 17 for SQL Server'
+      trust_cert: True

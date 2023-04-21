@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sample_table_database
+    database: source_db
+    schema: source_schema
+    tables:
+      - name: table_one
+      - name: table_two
+      - name: table_three
